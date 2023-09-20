@@ -15,5 +15,6 @@ jobs:
     runs-on: ubuntu-lastest
     steps:
       - uses: actions/checkout@v4
+      - uses: actions/setup-node@v3
       - run: cd scr/webapp/api
       - run: npm run test
