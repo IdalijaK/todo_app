@@ -16,5 +16,7 @@ jobs:
     steps:
       - uses: actions/checkout@v4
       - uses: actions/setup-node@v3
-      - run: cd scr/webapp/api
-      - run: npm run test
+        with:
+          node-version: '14'
+      - run: cd .scr/webapp/api && npm ci && nmp run test
+     
