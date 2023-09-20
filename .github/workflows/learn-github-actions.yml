@@ -14,5 +14,5 @@ jobs:
   run-unit-tests: 
     runs-on: ubuntu-lastest
     steps:
-      - uses: scr/webapp/api
+      - uses: "/scr/webapp/api"
       - run: npm run test
